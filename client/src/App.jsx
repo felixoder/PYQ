@@ -7,10 +7,10 @@ export default function App() {
   return (
    <>
    <Header/>
-   
-   <Main/>
-   
-   <Routes>
+
+
+       <Routes>
+       <Route path='/' element={<Main/>}/>
 
 <Route path='/sign-in' element={<SignIn/>}/>
 <Route path='/sign-up' element={<SignUp/>}/>
