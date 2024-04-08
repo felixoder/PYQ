@@ -20,7 +20,7 @@ if(!currentUser){
     <div className=''>
       <Toaster/>
        
-      <p className='text-center font-bold text-3xl'>Hello {currentUser.username}</p>
+  
       <p className='text-center font-semibold text-2xl mb-2 text-blue-600'>Want to Score 100 in all subjects and fade up to find all PYQs Welcome to our collaborative platform. Practise Others Question and Post your Question to learn collaboratively</p>
     <h1 className='text-center font-bold text-3xl'>Choose Your Board</h1>
     <div className="container flex">
