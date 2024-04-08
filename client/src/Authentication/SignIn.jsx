@@ -5,6 +5,7 @@ import {useDispatch , useSelector} from "react-redux";
 import  {signInFailure, signInStart, signInSuccess} from "../redux/user/userSlice.js";
 import toast , {Toaster} from "react-hot-toast";
 import {useNavigate} from "react-router-dom";
+import OAuth from "./OAuth.jsx";
 
 export default function SignIn() {
     const [formData , setFormData] = useState({});
@@ -75,12 +76,12 @@ export default function SignIn() {
                        'Sign-In'
                 )}
                 </Button>
+            <OAuth/>
         </form>
         <Link to='/' className=''>
-            
 
 
-        <Button gradientDuoTone='purpleToPink' className='w-[400px] flex justify-center items-center gap-2' >Sign In using Google</Button>
+
 
         </Link>
 

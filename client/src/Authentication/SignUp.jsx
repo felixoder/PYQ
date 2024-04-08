@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import toast , {Toaster} from 'react-hot-toast'
+import OAuth from "./OAuth.jsx";
 export default function SignUp() {
     const [formData, setFormData] = useState({});
     const [loading, setLoading] = useState(false);
@@ -84,13 +85,7 @@ export default function SignUp() {
 
         </Button>
 
-        <Link to='/' className=''>
-
-
-
-            <Button gradientDuoTone='purpleToPink' className='w-[400px] flex justify-center items-center gap-2' >Sign In using Google</Button>
-
-            </Link>
+        <OAuth/>
             <span>Already have an account do <Link to ='sign-in' className=' text-blue-700 border-b-2'>Sign In</Link></span>
 
         </form>
