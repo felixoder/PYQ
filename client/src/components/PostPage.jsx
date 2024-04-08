@@ -92,12 +92,13 @@ export default function PostPage() {
 </div>
 <p  className=' font-semibold mt-4 text-gray-600'>posted by ~ {post.author}</p>
                       
-                    <object className='mt-10 p-3 max-h-[600px] w-full object-cover'
-                            data=
-                                {post.pdf}
-                            width="400"
-                            height="800">
-                    </object>
+                  <iframe
+                        title="PDF Viewer"
+                        className='mt-10 p-3 max-h-[600px] w-full'
+                        src={post.pdf}
+                        width="100%"
+                        height="600"
+                    />
                     <div
                         className="flex justify-between p-3 border-b border-slate-500 mx-auto w-full max-w-2xl text-xs">
                         <span>{new Date(post.createdAt).toLocaleDateString()}</span>
